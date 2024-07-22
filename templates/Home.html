@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="#">Home</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/notes/create" target="_blank">create note</a></li>
+                <li>update note</li>
+                <li>delete note</li>
+                <li><a href="http://127.0.0.1:8000/notes" target="_blank">show notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-head">
+            <i class="fas fa-long-arrow-alt-right"></i>
+            <h1>Welcome to backend website</h1>
+            <i class="fas fa-long-arrow-alt-left"></i>
+        </div>
+        <div class="content">
+            <h3>You can :</h3>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/notes/create" target="_blank">create note</a></li>
+                <li><a href="#" target="_blank">update note</a></li>
+                <li><a href="#" target="_blank">delete note</a></li>
+                <li><a href='http://127.0.0.1:8000/notes' >show notes</a></li>
+            </ul>    
+        </div>
+    </main>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
